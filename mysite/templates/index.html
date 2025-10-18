@@ -1,10 +1,31 @@
+{% load static %}
 <!DOCTYPE html>
 <head>
     <title>Super duper template</title>
+    <link href="{% static 'style.css '%}" rel="stylesheet">
 </head>
 <body>
-    <h1>Tohle je muj prvni templateee!!!!</h1>
-    {{ jmeno }}
-    {{ barva }}
-</body>
+    <h1>Moje stranka</h1>
+    <p>Ahojky, jsem [nekdo] a je mi [x] let. 
+        Miluju Django a tohle je muj prvni projket v nem. Tohle je udelany pomoci template btw</p>
+    <h3>Neco o me</h3>
+    <p>Mam rada fotbal, malvani, hrani PC her.</p>
+    <p>Nesnasim matiku a miluju anglictinu.</p>
+    <p>Moje fav barva je cervena</p>
+    
+    <h3>Moje fav programovaci jazyky</h3>
+    <ul>
+        <li>Python je top</li>
+        <li>JavaScript protoze ho umim</li>
+        <li>C# protoze ho budu umet</li>
+        <li>Java protoze na ni je Minecraft</li>
+    </ul>
+
+    <img src="{% static 'cat.jpg'%}">
+
+    <h3>Fakt dne: Dneska je sobota</h3>
+
+    <
+    <h3></h3>
+    </body>
 </html>
