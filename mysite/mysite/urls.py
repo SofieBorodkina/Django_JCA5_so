@@ -20,8 +20,8 @@ from myapp.views import main, pozdrav
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',main),
-    path('pozdrav/',pozdrav),
+    path('',main,name='main'),
+    path('pozdrav/',pozdrav,name='pozdrav'),
     path('article/',include('myapp.urls')),
 
     

@@ -9,11 +9,8 @@ def main(request: HttpRequest) -> HttpResponse:
         'barva':barva,
     })
 
-
-
-
 def pozdrav(request: HttpRequest) -> HttpResponse:
-    return HttpResponse("Ahoooj vitej na moji strance.")
+    return render(request,'pozdrav.html')
 
 def article_main(request: HttpRequest) -> HttpResponse:
     return HttpResponse("Tohle je hlavni article.")
